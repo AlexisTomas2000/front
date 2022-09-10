@@ -10,11 +10,13 @@ import {ProveedorService} from "./services/proveedor/proveedor.service";
 import {ProveedorComponent} from "./components/proveedor/proveedor.component";
 import {PrecioComponent} from "./components/precio/precio.component";
 import {ClienteComponent} from "./components/cliente/cliente.component";
+import {CartComponent} from "./components/cart/cart.component";
 
 //Rutas de Navegacion
-const routes: Routes = [
+export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch:'full'}, //Esta es para cuando se pone vacio
   {path: 'home', component: HomeComponent},
+  {path: 'cart', component: CartComponent},
   {path: 'localidad', component: LocalidadComponent},
   {path: 'tipo-mascota', component: TipoMascotaComponent},
   {path: 'producto', component: ProductoComponent},
@@ -23,8 +25,6 @@ const routes: Routes = [
   {path: 'precio', component: PrecioComponent},
   {path: 'cliente', component: ClienteComponent},
   {path: '**', component: PagenotfoundComponent}, //Comodin: Cuando se ingresa una url que no existe
-
-
 ];
 
 @NgModule({
@@ -32,3 +32,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export let a={path: '', redirectTo: '/home', pathMatch:'full'} ;

@@ -1,5 +1,5 @@
-<h1>Menu de Opciones</h1>
-<nav navbar navbar-expand-lg navbar-light bg-light>
+<!--<h1>Menu de Opciones</h1>
+<nav-- navbar navbar-expand-lg navbar-light bg-light>
   <a routerLink="/home" routerLinkActive="active-link">Home</a>
   <a routerLink="/localidad" routerLinkActive="active-link">---ABM Localidad</a>
   <a routerLink="/tipo-mascota" routerLinkActive="active-link">---ABM Tipo de Mascota</a>
@@ -8,4 +8,42 @@
   <a routerLink="/proveedor" routerLinkActive="active-link">---ABM Proveedor</a>
   <a routerLink="/precio" routerLinkActive="active-link">---ABM Precio</a>
   <a routerLink="/cliente" routerLinkActive="active-link">---ABM Cliente</a>
-</nav>
+</nav>-->
+<header class="header">
+  <div class="navbar shadow-sm">
+    <div class="navbar-brand aling-item-center d-flex">
+      <img src="https://img.icons8.com/ios/30/000000/search--v4.png" class="search-ico"/>
+      <a (click)="redirect('home')"><img src="https://i.pinimg.com/originals/39/9f/01/399f01d698e84078be3e11b45a98b82e.png"class="pampa-ico"></a>
+      <strong style="font-size: 30px"></strong>
+      <div class="from-group">
+        <input type="text" class="form-control" placeholder="Search Products">
+      </div>
+    </div>
+    <button (click)="redirect('cart')" class="btn btn-light">
+      <img src="https://img.icons8.com/emoji/48/000000/shopping-cart-emoji.png" style="font-size: 30px"/>
+      <div style="font-size: 10px" class="badge bg-danger">5</div>
+    </button>
+  </div>
+</header>
+<div class="card-top container-fluid">
+  <div class="container d-flex">
+    <div class="item">
+      <a (click)="redirect('producto')">
+        <img src="https://img.icons8.com/external-wanicon-flat-wanicon/64/000000/external-pet-food-supermarket-wanicon-flat-wanicon.png"/>
+        <h6> All Products</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a>
+        <img src="https://img.icons8.com/emoji/64/000000/cat-emoji.png"/>
+        <h6>Alimento para Gatos</h6>
+      </a>
+    </div>
+    <div class="item">
+      <a>
+        <img src="https://img.icons8.com/emoji/64/000000/dog-emoji.png"/>
+        <h6>Alimento para Perros</h6>
+      </a>
+    </div>
+  </div>
+</div>

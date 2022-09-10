@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductoService } from "../../services/producto/producto.service";
 import { NgForm } from "@angular/forms";
+import {Precio} from "../../models/precio";
 
 @Component({
   selector: 'app-producto',
@@ -26,8 +27,11 @@ export class ProductoComponent implements OnInit {
       },
       err => console.log(err)
     )
-
   }
+getPrecio(id:string){
+this.productoService.getPrecio(id);
+}
+
 
   addProducto(form: NgForm) {
     if (form.value._id) {

@@ -5,3 +5,51 @@
 .active-link a{
   color: linen;
 }
+.form-control{
+  border-radius: 3px;
+  width: 600px;
+  margin-left: 250px;
+}
+.search-ico{
+  position:absolute;
+  z-index: 10;
+  right: 56%;
+  top: 32%;
+}
+.pampa-ico{
+  position:absolute;
+  z-index: 10;
+  right: 88%;
+  top: -6%;
+  width: 200px;
+  height: 70px;
+  margin-top: 3px;
+}
+.header{
+  background: lightgray;
+}
+.btn{
+  background:lightgray;
+}
+.card-top{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: .25rem;
+}
+.item img{
+  width: 60px;
+  height: 60px;
+}
+.item{
+  margin: 5px 15px;
+  text-align:center ;
+}
+.item a:hover{
+  color: blue;
+}

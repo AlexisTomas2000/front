@@ -15,6 +15,8 @@ import { SucursalComponent } from './components/sucursal/sucursal.component';
 import { ProveedorComponent } from './components/proveedor/proveedor.component';
 import { PrecioComponent } from './components/precio/precio.component';
 import { ClienteComponent } from './components/cliente/cliente.component';
+import { CartComponent } from './components/cart/cart.component';
+import { HeadersComponent } from './components/headers/headers.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ClienteComponent } from './components/cliente/cliente.component';
     SucursalComponent,
     ProveedorComponent,
     PrecioComponent,
-    ClienteComponent
+    ClienteComponent,
+    CartComponent,
+    HeadersComponent
   ],
   imports: [
     BrowserModule,
